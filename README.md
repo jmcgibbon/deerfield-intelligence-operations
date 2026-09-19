@@ -14,7 +14,7 @@ The submission moves from diagnosis to implementation:
 
 A structured assessment of the operational gaps most likely to constrain DI as it scales.
 
-The assessment triangulates interview evidence into discrete operating issues, distinguishes systemic gaps from symptoms and localized concerns, prioritizes them based on impact and urgency, and sequences the response based on dependencies and realistic implementation capacity.
+The assessment triangulates interview evidence into discrete operating issues, distinguishes systemic gaps from symptoms and localized concerns, prioritizes them based on business impact, urgency, scale dependency and implementation effort, and sequences the response based on dependencies and realistic implementation capacity.
 
 The core conclusion is that DI does not need more process for its own sake. It needs a lightweight operating backbone that improves portfolio visibility, delivery reliability, hiring readiness, cross-functional coordination, and selected financial and control mechanisms.
 
