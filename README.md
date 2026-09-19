@@ -1,89 +1,126 @@
-# Deerfield Intelligence Director of Operations Take-Home Assessment
+# Deerfield Intelligence | Director of Operations Take-Home Assessment
 
-## Overview
+This repository contains my response to the Director of Operations take-home assessment for Deerfield Intelligence.
 
-This repository contains my proposed approach to establishing the operational foundation required for Deerfield Intelligence to scale from approximately 10 to 30 people over the next 18 months.
+My approach is built around a simple premise: as DI scales from approximately 10 to 30 people, the goal should not be to introduce heavy process. It should be to establish the minimum operating infrastructure required to make priorities, ownership, dependencies, decisions, and cross-functional work visible and reliable — while preserving the speed and entrepreneurialism of a small team.
 
-The assessment is designed around a central principle: **introduce enough structure to support growth without slowing down a small, high-velocity team.** The recommendations therefore emphasize clear ownership, lightweight workflows, visible decisions and dependencies, trigger-based controls, and practical implementation within the capacity of one Director of Operations.
+The submission moves from diagnosis to implementation:
 
-## Repository Contents
+**Diagnose the gaps → Prioritize and sequence the response → Define how cross-functional work should operate → Demonstrate the model with lightweight tooling**
 
-### 01 Operational Gap Assessment
+## Repository Structure
 
-Assesses the operational capabilities DI will need as it scales and provides a structured method for validating, prioritizing and sequencing the most important gaps.
+### 01. Operational Gap Assessment
 
-The assessment distinguishes between:
+A structured assessment of the operational gaps most likely to constrain DI as it scales.
 
-* Observed symptoms and underlying root causes
-* High-confidence issues and hypotheses requiring validation
-* Immediate risks and longer-term scaling needs
-* Foundational priorities and improvements that can be deferred
+The assessment triangulates interview evidence into discrete operating issues, distinguishes systemic gaps from symptoms and localized concerns, prioritizes them based on impact and urgency, and sequences the response based on dependencies and realistic implementation capacity.
 
-### 02 30-60-90 Day Operational Plan
+The core conclusion is that DI does not need more process for its own sake. It needs a lightweight operating backbone that improves portfolio visibility, delivery reliability, hiring readiness, cross-functional coordination, and selected financial and control mechanisms.
 
-Translates the gap assessment into a focused first-90-day plan.
+**Key output:** A prioritized and sequenced view of where operational infrastructure needs to evolve.
 
-The plan prioritizes a limited number of foundational changes that one Director of Operations can realistically implement while continuing to support day-to-day business needs. It also identifies important initiatives that should begin after the first 90 days and explains why they have been deferred.
+---
 
-### 03 Cross-Functional Coordination Model
+### 02. 30-60-90 Day Operational Plan
 
-Defines a lightweight operating interface between Deerfield Intelligence and Deerfield’s corporate functions.
+A practical implementation plan for establishing the highest-value elements of that operating backbone.
+
+The plan deliberately limits the number of substantial builds underway at once, recognizing that a single Director of Operations cannot solve every identified gap simultaneously.
+
+The first 90 days prioritize lightweight mechanisms that improve visibility and execution quickly, while deferring larger policy, governance, and capability builds until the operating foundation is stable.
+
+**Key output:** A sequenced plan for what to establish now, what to begin, and what to defer beyond 90 days.
+
+---
+
+### 03. Cross-Functional Coordination Model
+
+A lightweight operating interface for recurring work that crosses Deerfield Intelligence and Deerfield corporate functions.
 
 The model establishes:
 
-* One front door for recurring cross-functional requests
-* Clear business, Operations and specialist decision rights
-* Trigger-based involvement from HR, Finance, Legal, Compliance, IT and Security
-* Shared visibility into ownership, status, dependencies and exceptions
-* A limited operating cadence focused on decisions rather than status reporting
-* Escalation paths for material tradeoffs, risks and policy exceptions
+- One front door for recurring cross-functional requests
+- Clear accountable ownership
+- Trigger-based involvement of specialist functions
+- Visible status, dependencies, and next actions
+- Explicit escalation paths
+- Exception-based rather than meeting-heavy coordination
 
-The model applies this common operating logic across five priority workflow families:
+The model is designed around an important boundary: Operations coordinates the system but does not automatically own the underlying business outcome or replace the judgment and authority of HR, Finance, Legal, Compliance, IT, Security, or other specialist functions.
 
-1. Portfolio control and delivery coordination
-2. Hiring, onboarding and access
-3. Vendor and data-source coordination
-4. AI, data and portfolio-company engagement
-5. Financial planning and spend management
+Operations may itself be the accountable owner where the underlying outcome is an Operations responsibility; otherwise, accountability remains with the relevant business or functional owner.
 
-### 04 Operational Gap Assessment Tool
+**Key output:** A repeatable coordination model that can scale without creating a large central Operations function.
 
-Provides a practical working tool for capturing interview evidence, triangulating observations, assessing root causes, prioritizing confirmed gaps and translating findings into an implementation sequence.
+---
 
-The tool is intended to support the assessment process rather than replace judgment.
+### 04. Supporting Materials
 
-### 05 Supporting Materials
+Supporting materials used to develop the assessment and demonstrate the underlying analytical process.
 
-Contains the interview guides, assumptions and other reference materials supporting the assessment.
+This folder includes:
 
-The interview guides are structured to test the initial hypotheses with DI leadership, pod leads, employees and corporate partners while distinguishing isolated concerns from recurring operational issues.
+- Interview guides used to interrogate the operating model from multiple stakeholder perspectives
+- The Operational Gap Assessment Tool used to capture evidence, triangulate observations, identify root causes, prioritize issues, and support sequencing
 
-## How the Deliverables Connect
+These materials are included to make the analytical process transparent without overloading the primary deliverables with working-level detail.
 
-The materials are intended to be read as one connected approach:
+---
 
-**Interview evidence → Gap assessment → Prioritized initiatives → 30-60-90 day plan → Sustainable coordination model**
+### 05. DI Operations Hub Prototype
 
-* The **interview guides** identify and validate operational gaps.
-* The **gap assessment tool** triangulates and prioritizes the evidence.
-* The **Operational Gap Assessment** summarizes the resulting findings and implications.
-* The **30-60-90 Day Operational Plan** sequences the highest-priority actions.
-* The **Cross-Functional Coordination Model** illustrates the operating foundation DI can build toward.
+A lightweight functional prototype that translates elements of the proposed operating model into practice.
+
+The DI Operations Hub demonstrates how a single operational front door could support recurring cross-functional work as DI scales.
+
+The prototype allows a user to:
+
+- Submit an operational or cross-functional request through one intake point
+- Classify the request into a defined workflow family
+- Route it to the relevant corporate functions
+- Maintain a clearly identified accountable owner
+- Track lightweight coordination steps across functions
+- Surface blockers and items requiring attention
+- Escalate exceptions when Operations determines intervention is required
+- Maintain visibility through a consolidated Operations dashboard
+
+The tool intentionally automates the repeatable elements of coordination — routing, visibility, status, and exception identification — while preserving human judgment over accountability, prioritization, decisions, and escalation.
+
+It is designed as a **minimum viable coordination layer**, not as a replacement for enterprise workflow or project-management systems.
+
+**Live prototype:** https://DI-Operations-Hub-jmcgibbon.replit.app/ 
+
+**Password:** DeerfieldIntelligenceTHA!
+
+**Key output:** A tangible demonstration of how the proposed operating model could work in practice.
+
+---
 
 ## Design Principles
 
-The recommendations throughout the assessment follow seven principles:
+Across the assessment, I used a consistent set of principles:
 
-1. **Minimum viable process:** Build only what DI needs to scale effectively.
-2. **Preserve velocity:** Controls should reduce uncertainty and rework rather than create bureaucracy.
-3. **One front door:** Employees should not need to navigate Deerfield’s corporate structure to move work forward.
-4. **Clear ownership:** Every recurring workflow should have one accountable owner.
-5. **Transparency by default:** Priorities, decisions, dependencies and responsibilities should be visible.
-6. **Automate before adding administrative capacity:** Use AI and lightweight tooling where the workflow is sufficiently stable.
-7. **Build for 30, not 300:** Avoid introducing infrastructure designed for a much larger organization prematurely.
+1. **Build for 30, not 300.** Avoid infrastructure designed for an organization significantly more complex than DI needs to become over the next 18 months.
 
-## Important Context
+2. **One front door.** Employees should not need to understand Deerfield's organizational structure to get cross-functional work done.
 
-The assessment is based on the scenario and information provided. In practice, the initial hypotheses and proposed sequencing would be validated through stakeholder interviews, existing process and data review, and observation of DI’s current operating rhythms.
+3. **Clear ownership.** Every material workflow should have one accountable owner; coordination does not transfer accountability to Operations.
 
-The objective is not to implement every process described immediately. It is to establish a practical foundation, learn from actual usage and add structure only where it demonstrably improves clarity, speed or risk management.
+4. **Minimum viable process.** Standardize only where ambiguity, delay, risk, or repeated coordination creates material friction.
+
+5. **Visibility by default.** Priorities, ownership, status, dependencies, and exceptions should be visible without reconstructing them through meetings and messages.
+
+6. **Exception-based coordination.** Routine work should move asynchronously; Operations attention and management forums should focus on decisions, dependencies, blockers, and exceptions.
+
+7. **Preserve specialist authority.** HR, Finance, Legal, Compliance, IT, Security, and other corporate functions retain their domain judgment and approval authority.
+
+8. **Automate after the workflow is clear.** Use lightweight tooling to reduce coordination burden, but do not automate ambiguity or substitute tooling for clear ownership.
+
+## A Note on Scope
+
+This submission is intentionally designed around what one Director of Operations could realistically establish in the first 90 days.
+
+Not every identified gap should become an immediate initiative. Some issues require additional evidence; others depend on broader policy decisions, specialist capacity, or operating mechanisms that should be stabilized first.
+
+The objective of the first 90 days is therefore not to build the final operating model. It is to establish enough structure to improve execution now while creating the evidence and foundations required for the next stage of scale.
